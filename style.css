@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*
+Theme Name: Christmas Hestia
+Theme URI: https://www.themeisle.com/
+Description: Christmas Hestia is a Christmas styled child theme for blogging enthusiasts and for page builders fans. Hestia is a modern material design theme, obviously responsive with a clean design and lots of options.
+Author: ThemeIsle
+URI: https://www.themeisle.com/
+Template: hestia
+Version: 1.0.0
+Tags: blog, custom-logo, e-commerce, post-formats, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+#snow_canvas {
+    background: transparent;
+    position: fixed;
+    z-index: 10000;
+    pointer-events:none;
+    max-width: 100%;
+}
+
+.header-filter.header-filter-gradient {
+    background: linear-gradient(45deg, rgb(158,25,60) 0%, rgb(224,53,39) 100%);
+}
+
+.carousel h1.hestia-title:before {
+    font-family: "Fontawesome";
+    z-index: -1;
+    font-size: 45px;
+    content: "\f2dc";
+    color: rgba(105, 213, 255, 0.72);
+    display: inline-block;
+    top: -40px;
+    position: relative;
+    left:30px;
+    -ms-transform: rotate(-24deg);
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+}
