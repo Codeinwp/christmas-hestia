@@ -1,5 +1,4 @@
-# Tiny Hestia
-
+# Christmas Hestia
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.9  
 **Stable tag:** 1.0.0  
@@ -32,4 +31,9 @@ Christmas Hestia bundles the following third-party resources:
 
 License: All images are licensed under the terms of the Creative Commons Zero, http://creativecommons.org/publicdomain/zero/1.0/ from the author.
 
+http://mystock.photos/sweet-cake-christmas-tree/
+http://mystock.photos/bow/
 
+### Scripts
+
+jQuery Snowfall - Licensed under the Apache license - https://github.com/loktar00/JQuery-Snowfall

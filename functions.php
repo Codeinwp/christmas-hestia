@@ -28,7 +28,8 @@ add_action( 'wp_enqueue_scripts', 'christmas_hestia_parent_css', 10 );
  */
 function christmas_hestia_scripts() {
 	wp_enqueue_style( 'christmas-hestia-style', get_stylesheet_uri(), array(), CHRISTMAS_HESTIA_VERSION );
-	wp_enqueue_script( 'christmas-hestia-snow', get_stylesheet_directory_uri() . '/assets/js/snow.js', array(), CHRISTMAS_HESTIA_VERSION );
+	wp_enqueue_script( 'christmas-hestia-snow', get_stylesheet_directory_uri() . '/assets/js/canvas-snow.js', array( 'jquery' ), CHRISTMAS_HESTIA_VERSION, true );
+	wp_enqueue_script( 'christmas-hestia-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array( 'jquery', 'christmas-hestia-snow' ), CHRISTMAS_HESTIA_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'christmas_hestia_scripts',9);
 
@@ -37,11 +38,17 @@ add_action( 'wp_enqueue_scripts', 'christmas_hestia_scripts',9);
  *
  * @since 1.0.0
  */
-function christmas_hestia_snow() {
-	$snow = '<canvas id="snow_canvas"></canvas>';
-	echo $snow;
+function christmas_hestia_lights() {
+
+	if( ( is_home() && get_option( 'page_on_front' ) !== 'page' ) || is_single() || is_archive() ) {
+		echo '<div id="hestia-lights">';
+		for ( $i = 1; $i <= 20; $i ++ ) {
+			echo '<div class="led"></div>';
+		}
+		echo '</div><!-- #lights -->';
+	}
 }
-add_action( 'hestia_before_header_hook', 'christmas_hestia_snow', 0 );
+add_action( 'hestia_before_header_hook', 'christmas_hestia_lights', 0 );
 
 /**
  * Change default accent color.
