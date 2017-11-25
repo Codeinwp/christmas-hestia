@@ -5,7 +5,7 @@
  * @package christmas-hestia
  * @since 1.0.0
  */
-define( 'CHRISTMAS_HESTIA_VERSION', '1.0.1');
+define( 'CHRISTMAS_HESTIA_VERSION', '1.0.2');
 
 if ( !function_exists( 'christmas_hestia_parent_css' ) ):
 	/**
