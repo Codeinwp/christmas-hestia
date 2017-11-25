@@ -166,8 +166,8 @@ function christmas_hestia_contact_content() {
 				<i class="fa fa-envelope"></i>
 			</div>
 			<div class="description">
-				<h3 class="info-title">Write to Santa</h3>
-				<p>Arctic Circle, 96930 Arctic Circle, Finland Lapland</p>
+				<h3 class="info-title">' . __( 'Write to Santa', 'christmas-hestia' ) . '</h3>
+				<p>'. __( 'Arctic Circle, 96930 Arctic Circle, Finland Lapland', 'christmas-hestia') . '</p>
 			</div>
 		</div>
 		<div class="hestia-info info info-horizontal">
@@ -175,8 +175,8 @@ function christmas_hestia_contact_content() {
 				<i class="fa fa-heart"></i>
 			</div>
 			<div class="description">
-				<h3 class="info-title">Talk to Santa</h3>
-				<p>Santa Claus <br> +12 345 678 90<br>Mon - Fri, 8:00-22:00</p>
+				<h3 class="info-title">' . __( 'Talk to Santa', 'christmas-hestia' ) . '</h3>
+				<p>' . __( 'Santa Claus', 'christmas-hestia' ) .' <br> +12 345 678 90<br> ' . __( 'Mon - Fri', 'christmas-hestia' ) . ', 8:00-22:00</p>
 			</div>
 		</div>';
 

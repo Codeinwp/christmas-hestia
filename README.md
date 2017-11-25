@@ -3,8 +3,8 @@
 **Tested up to:** WordPress 4.9  
 **Stable tag:** 1.0.0  
 **Version:** 1.0.0 
-**License:** GNU General Public License v2 or later  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+**License:** GNU General Public License v3 or later  
+**License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 **Tags:** blog, custom-logo, e-commerce, post-formats, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, holiday, sticky-post, theme-options, threaded-comments, translation-ready
 
 ## Description
