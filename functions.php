@@ -85,7 +85,7 @@ add_action( 'customize_register', 'christmas_hestia_customize_register', 99 );
  * @since 1.0.0
  */
 function christmas_hestia_default_heading_fonts(){
-	return 'Amatic SC';
+	return 'Lobster Two';
 }
 
 /**
