@@ -5,7 +5,7 @@
  * @package christmas-hestia
  * @since 1.0.0
  */
-define( 'CHRISTMAS_HESTIA_VERSION', '1.0.2');
+define( 'CHRISTMAS_HESTIA_VERSION', '1.0.4');
 
 if ( !function_exists( 'christmas_hestia_parent_css' ) ):
 	/**
@@ -183,3 +183,20 @@ function christmas_hestia_contact_content() {
 	return $html;
 }
 add_filter( 'hestia_contact_content_default', 'christmas_hestia_contact_content' );
+
+add_action( 'after_switch_theme', 'christmas_hestia_get_lite_options' );
+
+/**
+ * Import options from Hestia
+ */
+function christmas_hestia_get_lite_options() {
+    $hestia_mods = get_option( 'theme_mods_hestia' );
+    if ( ! empty( $hestia_mods ) ) {
+
+        foreach ( $hestia_mods as $hestia_mod_k => $hestia_mod_v ) {
+
+            set_theme_mod( $hestia_mod_k, $hestia_mod_v );
+        }
+
+    }
+}
